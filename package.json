@@ -28,6 +28,7 @@
     "gulp-watch": "^4.3.11",
     "install": "^0.10.1",
     "load-gulp-tasks": "^0.1.0",
+    "node-notifier": "^5.1.2",
     "npm": "^4.5.0",
     "run-sequence": "^1.2.2",
     "standard": "^10.0.2",
