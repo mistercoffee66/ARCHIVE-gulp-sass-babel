@@ -7,7 +7,9 @@ const tasks = (gulp, options, plugins) => {
   gulp.task('styles:dev', () => {
     return gulp.src(path.join(options.root, 'styles/main.scss'))
     .pipe(plugins.sourcemaps.init({loadMaps: true}))
-    .pipe(plugins.sass().on('error', plugins.sass.logError))
+    .pipe(plugins.sass().on('error', (err) => {
+      //
+    }))
     .pipe(plugins.postcss([
       autoprefixer({browsers: ['last 1 version','ie 10']})
     ]))

@@ -19,7 +19,7 @@ if (process.env.NODE_ENV !== 'production') {
   const GulpMem = require('gulp-mem')
   const gulpMem = new GulpMem()
   const _gulpsrc = gulp.src
-  gulp.src = (...args) => {
+  gulp.src = function (...args) {
     return _gulpsrc.apply(gulp, args)
     .pipe(plumber({
       errorHandler: (err) => {

@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Generic gulp starter project for ES6 via Babel and Less for css. Dev files are served from memory using Gulp-Mem for super-fast compilation.",
   "main": "index.js",
-  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^7.1.1",
     "babel-core": "^6.24.1",
